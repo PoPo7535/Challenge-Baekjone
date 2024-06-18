@@ -4,7 +4,7 @@ namespace ChallengeBaekjone
 {
     public class Baekjone1436
     {
-        public static void Problem1436()
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             var num = 0;

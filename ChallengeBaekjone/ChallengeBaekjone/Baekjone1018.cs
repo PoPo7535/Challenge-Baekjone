@@ -4,7 +4,7 @@ namespace ChallengeBaekjone.Properties
 {
     public class Baekjone1018
     {
-        public static void Problem1018()
+        public static void Problem()
         {
             var input = Console.ReadLine().Split(' ');
             var Y = int.Parse(input[0]);
