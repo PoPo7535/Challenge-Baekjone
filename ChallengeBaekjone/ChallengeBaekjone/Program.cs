@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using System.Text;
 
 namespace ChallengeBaekjone
 {
@@ -6,6 +8,23 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
+            
+            
+            
+            
+
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
         }
     }
 }
