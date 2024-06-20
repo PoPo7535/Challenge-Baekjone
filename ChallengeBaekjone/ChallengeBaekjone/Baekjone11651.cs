@@ -1,11 +1,10 @@
 ﻿using System;
 using System.IO;
-using System.Numerics;
 using System.Text;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone11651
     {
         public struct Vector2 :IComparable<Vector2>
         {
@@ -25,7 +24,7 @@ namespace ChallengeBaekjone
             }
         }
         
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             Vector2[] vec = new Vector2[N];
@@ -41,7 +40,6 @@ namespace ChallengeBaekjone
                 for (int i = 0; i < N; ++i)
                 {
                     writer.WriteLine($"{vec[i].x} {vec[i].y}");
-
                 }
             }
         }
