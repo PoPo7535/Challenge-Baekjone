@@ -1,22 +1,24 @@
 ﻿using System;
+
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public struct Info : IComparable<Info>
     {
-        public struct Info : IComparable<Info>
+        public int age;
+        public string name;
+        public int number;
+        public int CompareTo(Info other)
         {
-            public int age;
-            public string name;
-            public int number;
-            public int CompareTo(Info other)
-            {
-                var ageCompareTo = age.CompareTo(other.age);
-                if (ageCompareTo != 0)
-                    return ageCompareTo;
-                return number.CompareTo(other.number);
-            }
+            var ageCompareTo = age.CompareTo(other.age);
+            if (ageCompareTo != 0)
+                return ageCompareTo;
+            return number.CompareTo(other.number);
         }
-        public static void Main(string[] args)
+    }
+    
+    public class Baekjone10814
+    {
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             var info = new Info[N];
