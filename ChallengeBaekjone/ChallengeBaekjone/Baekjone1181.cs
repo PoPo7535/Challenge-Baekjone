@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone1181
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             var str = new string[N];
@@ -28,7 +28,6 @@ namespace ChallengeBaekjone
 
             for (var i = 0; i < str.Length; ++i)
                 Console.WriteLine(str[i]);
-
         }
     }
 }
