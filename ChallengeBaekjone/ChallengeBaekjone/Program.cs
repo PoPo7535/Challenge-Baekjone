@@ -6,19 +6,6 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
-            var input = Console.ReadLine().Split(' ');
-            var A = long.Parse(input[0]);
-            var B = long.Parse(input[1]);
-            var a = A;
-            var b = B;
-            while (a != b)
-            {
-                if (a < b)
-                    a += A;
-                else
-                    b += B;
-            }
-            Console.WriteLine(a);
         }
     }
 }
