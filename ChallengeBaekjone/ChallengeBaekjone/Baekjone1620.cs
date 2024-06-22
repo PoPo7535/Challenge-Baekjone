@@ -5,15 +5,14 @@ using System.Text;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone1620
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var input = Console.ReadLine().Split(' ');
             var N = int.Parse(input[0]);
             var M = int.Parse(input[1]);
             var dic = new Dictionary<string, string>();
-
             for (int i = 1; i <= N; ++i)
             {
                 var name = Console.ReadLine();
@@ -31,14 +30,3 @@ namespace ChallengeBaekjone
         }
     }
 }
-
-/*
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
- */
