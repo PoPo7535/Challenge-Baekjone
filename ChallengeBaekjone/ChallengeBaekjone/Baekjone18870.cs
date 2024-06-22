@@ -6,9 +6,9 @@ using System.Text;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone18870
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             var dic = new Dictionary<int, int>();
@@ -16,12 +16,10 @@ namespace ChallengeBaekjone
             var split = Console.ReadLine().Split(' ');
             for (int i = 0; i < N; ++i)
                 arr[i] = int.Parse(split[i]);
-
             var dis = arr.Distinct().ToArray();
             Array.Sort(dis);
             for (int i = 0; i < dis.Length; ++i)
                 dic.Add(dis[i], i);
-
             using (StreamWriter writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
             {
                 for (int i = 0; i < arr.Length; ++i)

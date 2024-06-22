@@ -50,6 +50,7 @@
         <Compile Include="Baekjone1181.cs" />
         <Compile Include="Baekjone1427.cs" />
         <Compile Include="Baekjone1436.cs" />
+        <Compile Include="Baekjone18870.cs" />
         <Compile Include="Baekjone2751.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
