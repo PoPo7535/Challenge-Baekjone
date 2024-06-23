@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone2485
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var N = int.Parse(Console.ReadLine());
             var list = new List<int>();
@@ -14,7 +15,6 @@ namespace ChallengeBaekjone
             var gcd = list[1] - list[0];
             for (int i = 2; i < list.Count; ++i)
                 gcd = GCD(gcd, list[i] - list[i - 1]);
-            
             var result = 0;
             for (int i = 1; i < list.Count; ++i)
                 result += (list[i] - list[i - 1]) / gcd - 1;
@@ -32,18 +32,3 @@ namespace ChallengeBaekjone
         }
     }
 }
-
-/*
- * var input = Console.ReadLine().Split(' ');
- * var N = int.Parse(input[0]);
- * var M = int.Parse(input[1]);
- * 
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
- */
