@@ -56,6 +56,7 @@
         <Compile Include="Baekjone1436.cs" />
         <Compile Include="Baekjone14425.cs" />
         <Compile Include="Baekjone1620.cs" />
+        <Compile Include="Baekjone17103.cs" />
         <Compile Include="Baekjone1735.cs" />
         <Compile Include="Baekjone1764.cs" />
         <Compile Include="Baekjone18870.cs" />
@@ -63,6 +64,7 @@
         <Compile Include="Baekjone2485.cs" />
         <Compile Include="Baekjone2751.cs" />
         <Compile Include="Baekjone28278.cs" />
+        <Compile Include="Baekjone4134.cs" />
         <Compile Include="Baekjone7785.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
