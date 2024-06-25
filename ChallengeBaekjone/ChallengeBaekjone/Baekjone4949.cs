@@ -3,16 +3,15 @@ using System.Collections.Generic;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone4949
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             while (true)
             {
                 var str = Console.ReadLine();
                 if (str == ".")
                     return;
-
                 var aCount = 0;
                 var bCount = 0;
                 var cur = 0; // 1:a,  2,b
@@ -30,7 +29,6 @@ namespace ChallengeBaekjone
                                 Console.WriteLine("no");
                                 goto end;
                             }
-
                             break;
                         case '(':
                             stack.Push(2);
@@ -44,25 +42,9 @@ namespace ChallengeBaekjone
                             break;
                     }
                 }
-
                 Console.WriteLine(stack.Count == 0 ? "yes" : "no");
                 end:;
             }
         }
     }
 }
-
-/*
- * var input = Console.ReadLine().Split(' ');
- * var N = int.Parse(input[0]);
- * var M = int.Parse(input[1]);
- * 
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
- */
