@@ -5,13 +5,12 @@ using System.Text;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone28279
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             var deck = new LinkedList<int>();
             var N = int.Parse(Console.ReadLine());
-            
             using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
             {
                 for (int i = 0; i < N; ++i)
@@ -51,22 +50,6 @@ namespace ChallengeBaekjone
                     }
                 }
             }
-           
         }
     }
 }
-
-/*
- * var input = Console.ReadLine().Split(' ');
- * var N = int.Parse(input[0]);
- * var M = int.Parse(input[1]);
- * 
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
- */
