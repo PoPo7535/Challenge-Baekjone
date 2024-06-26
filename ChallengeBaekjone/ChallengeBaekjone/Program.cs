@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
 
 namespace ChallengeBaekjone
 {
@@ -9,8 +7,9 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
-            var N = int.Parse(Console.ReadLine());
-            Console.WriteLine(N * (N - 1));
+
+
+
 
 
         }
