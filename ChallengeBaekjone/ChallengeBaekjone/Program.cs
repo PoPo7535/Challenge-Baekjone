@@ -4,11 +4,9 @@ namespace ChallengeBaekjone
     internal class Program
     {
         public static void Main(string[] args)
-        {
-            var split = Console.ReadLine().Split(' ');
-            var N = long.Parse(split[0]);
-            var K = long.Parse(split[1]);
+        {            
         }
+
     }
 }
 
