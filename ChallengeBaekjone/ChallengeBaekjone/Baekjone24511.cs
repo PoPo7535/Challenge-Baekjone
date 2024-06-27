@@ -6,9 +6,9 @@ using System.Text;
 
 namespace ChallengeBaekjone
 {
-    internal class Program
+    public class Baekjone24511
     {
-        public static void Main(string[] args)
+        public static void Problem()
         {
             StreamReader sr = new StreamReader(new BufferedStream(Console.OpenStandardInput()));
             var N = int.Parse(sr.ReadLine());
@@ -20,10 +20,8 @@ namespace ChallengeBaekjone
                 if (A[i][0] == '0')
                     list.AddLast(int.Parse(B[i]));
             }
-
             var M = int.Parse(sr.ReadLine());
             var C = sr.ReadLine().Split(' ').Select(int.Parse).ToArray();
-            
             using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
             {
                 list.AddLast(int.MaxValue);
@@ -39,19 +37,3 @@ namespace ChallengeBaekjone
         }
     }
 }
-
-
-/*
- * var input = Console.ReadLine().Split(' ');
- * var N = int.Parse(input[0]);
- * var M = int.Parse(input[1]);
- * 
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
- */
