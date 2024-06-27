@@ -5,7 +5,9 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine(Math.Pow(2,int.Parse(Console.ReadLine())));
+            var split = Console.ReadLine().Split(' ');
+            var N = long.Parse(split[0]);
+            var K = long.Parse(split[1]);
         }
     }
 }
