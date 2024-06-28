@@ -1,12 +1,27 @@
 ﻿using System;
+using System.Linq;
+
 namespace ChallengeBaekjone
 {
     internal class Program
     {
         public static void Main(string[] args)
-        {            
-        }
+        {
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
 
+            
+
+        }
     }
 }
 
