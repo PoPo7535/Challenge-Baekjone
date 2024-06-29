@@ -52,6 +52,7 @@
         <Compile Include="Baekjone11478.cs" />
         <Compile Include="Baekjone11650.cs" />
         <Compile Include="Baekjone11651.cs" />
+        <Compile Include="Baekjone11729.cs" />
         <Compile Include="Baekjone1181.cs" />
         <Compile Include="Baekjone11866.cs" />
         <Compile Include="Baekjone1269.cs" />
