@@ -18,11 +18,11 @@ namespace ChallengeBaekjone
             bool[] visited = new bool[N + 1];
             using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
             {
-                NM(1, N, M, sequence, visited, writer);
+                NM(N, M, sequence, visited, writer);
             }
         }
 
-        static void NM(int I, int N, int M, List<int> sequence, bool[] visited, StreamWriter writer)
+        static void NM(int N, int M, List<int> sequence, bool[] visited, StreamWriter writer)
         {
             if (sequence.Count == M)
             {
@@ -30,13 +30,13 @@ namespace ChallengeBaekjone
                 return;
             }
 
-            for (int i = I; i <= N; ++i)
+            for (int i = 1; i <= N; ++i)
             {
                 if (!visited[i])
                 {
                     visited[i] = true;
                     sequence.Add(i);
-                    NM(i, N, M, sequence, visited, writer);
+                    NM(N, M, sequence, visited, writer);
                     sequence.RemoveAt(sequence.Count - 1);
                     visited[i] = false;
                 }
