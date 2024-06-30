@@ -1,26 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-
 namespace ChallengeBaekjone
 {
     internal class Program
     {
         public static void Main(string[] args)
         {
-            var n = long.Parse(Console.ReadLine());
-            var sum = 0L;
-            while (n!=0)
-            {
-                --n;
-                sum += n;
-            }
-            Console.WriteLine($"{sum}\n{2}");
-
+            var num = long.Parse(Console.ReadLine());
+            Console.WriteLine($"{num * num * num}\n{3}");
+            //
+            // int sum = 0;
+            // for (int n = 0; n < 10; n++)
+            // {
+            //     for (int i = 0; i < n; i++)
+            //     {
+            //         for (int j = 0; j < n; j++)
+            //         {
+            //             for (int k = 0; k < n; k++)
+            //             {
+            //                 ++sum; // 코드1
+            //             }
+            //         }
+            //     }
+            //
+            //     Console.WriteLine(sum);
+            //     sum = 0;
+            // }
         }
-
     }
 }
 
