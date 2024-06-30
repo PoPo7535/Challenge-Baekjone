@@ -10,7 +10,15 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
-            
+            var n = long.Parse(Console.ReadLine());
+            var sum = 0L;
+            while (n!=0)
+            {
+                --n;
+                sum += n;
+            }
+            Console.WriteLine($"{sum}\n{2}");
+
         }
 
     }
