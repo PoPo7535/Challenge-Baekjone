@@ -5,24 +5,28 @@ namespace ChallengeBaekjone
     {
         public static void Main(string[] args)
         {
-            var num = long.Parse(Console.ReadLine());
-            Console.WriteLine($"{num * num * num}\n{3}");
-            //
+            // var num = long.Parse(Console.ReadLine());
+            // Console.WriteLine($"{num * num * num}\n{3}");
+            var n = long.Parse(Console.ReadLine());
+            long s = 0;
+            for (long i = 1; i <= n - 2; i++) // 추후 long long i = 1 으로 수정
+                s += (i * i + i) / 2; // i * i는 int형 범위 내에서만 계산됨. 상수x ?
+            Console.WriteLine($"{s}\n{3}");
+
             // int sum = 0;
             // for (int n = 0; n < 10; n++)
             // {
-            //     for (int i = 0; i < n; i++)
+            //     for (int i = 0; i < n - 2; i++)
             //     {
-            //         for (int j = 0; j < n; j++)
+            //         for (int j = i + 1; j < n - 1; j++)
             //         {
-            //             for (int k = 0; k < n; k++)
+            //             for (int k = j + 1; k < n; k++)
             //             {
-            //                 ++sum; // 코드1
+            //                 ++sum;
             //             }
             //         }
             //     }
-            //
-            //     Console.WriteLine(sum);
+            //     Console.WriteLine($"{n}:{sum}");
             //     sum = 0;
             // }
         }
