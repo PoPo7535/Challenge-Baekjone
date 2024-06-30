@@ -2,7 +2,7 @@
 
 namespace ChallengeBaekjone
 {
-    public class Baekjoen24265
+    public class Baekjone24265
     {
         public static void Problem()
         {

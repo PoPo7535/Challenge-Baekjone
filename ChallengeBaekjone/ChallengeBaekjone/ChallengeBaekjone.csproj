@@ -42,7 +42,8 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Baekjoen24265.cs" />
+        <Compile Include="Baekjone15652.cs" />
+        <Compile Include="Baekjone24265.cs" />
         <Compile Include="Baekjone1010.cs" />
         <Compile Include="Baekjone1018.cs" />
         <Compile Include="Baekjone1037.cs" />
