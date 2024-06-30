@@ -7,7 +7,7 @@ namespace ChallengeBaekjone
         public static void Problem()
         {
             var i = int.Parse(Console.ReadLine());
-            Console.WriteLine(i);
+            Console.WriteLine();
             Console.WriteLine(1);  
         }
     }
