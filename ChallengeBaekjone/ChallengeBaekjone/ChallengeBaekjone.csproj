@@ -97,6 +97,7 @@
         <Compile Include="Baekjone4779.cs" />
         <Compile Include="Baekjone4949.cs" />
         <Compile Include="Baekjone7785.cs" />
+        <Compile Include="Baekjone9663.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
