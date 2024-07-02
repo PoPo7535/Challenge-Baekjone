@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Numerics;
 using System.Text;
 
 namespace ChallengeBaekjone
@@ -9,24 +10,56 @@ namespace ChallengeBaekjone
     {
         static void Main(string[] args)
         {
-            var N = int.Parse(Console.ReadLine());
-            Console.WriteLine($"{Fibonacci(N)} {N-2}");
+            N = int.Parse(Console.ReadLine());
+            chessBoard = new int[N, N];
+            NQueen(0,0);
+            Console.WriteLine(count);
         }
-        static long Fibonacci(int n)
+        private static int N;
+        private static int useQueen;
+        private static int[,] chessBoard;
+        private static int count = 0;
+        private static void NQueen(int startX, int startY)
         {
-            if (n <= 1) return n;
-            long a = 0;
-            long b = 1;
-            long c = 0;
-
-            for (int i = 2; i <= n; i++)
+            for (var y = startY; y < N; ++y)
             {
-                c = a + b;
-                a = b;
-                b = c;
+                for (var x = 0; x < N; ++x)
+                {
+                    if (0 == chessBoard[x, y])
+                    {
+                        Cal(true, x, y);
+                        ++useQueen;
+                        if (useQueen == N)
+                            ++count;
+
+                        NQueen(x, y+1);
+                        Cal(false, x, y);
+                        --useQueen;
+                    }
+                }
+            }
+        }
+
+        private static void Cal(bool isPush, int x, int y)
+        {
+            var num = isPush ? 1 : -1;
+            for (int i = 0; i < N; ++i)
+            {
+                chessBoard[x, i] += num;
+                chessBoard[i, y] += num;
             }
 
-            return c;
+            for (int i = 0; 0 <= x - i && 0 < y - i; ++i)
+                chessBoard[x - i, y - i] += num;
+
+            for (int i = 0; x + i < N && y + i < N; ++i)
+                chessBoard[x + i, y + i] += num;
+            
+            for (int i = 0; 0 <= x - i && y + i < N; ++i)
+                chessBoard[x - i, y + i] += num;
+            
+            for (int i = 0; x + i < N && 0 < y - i; ++i)
+                chessBoard[x + i, y - i] += num;
         }
     }
 }
