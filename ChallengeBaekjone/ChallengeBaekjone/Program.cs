@@ -8,59 +8,12 @@ namespace ChallengeBaekjone
 {
     internal class Program
     {
-        static void Main(string[] args)
-        {
-            N = int.Parse(Console.ReadLine());
-            chessBoard = new int[N, N];
-            NQueen(0,0);
-            Console.WriteLine(count);
-        }
-        private static int N;
-        private static int useQueen;
-        private static int[,] chessBoard;
-        private static int count = 0;
-        private static void NQueen(int startX, int startY)
-        {
-            for (var y = startY; y < N; ++y)
-            {
-                for (var x = 0; x < N; ++x)
-                {
-                    if (0 == chessBoard[x, y])
-                    {
-                        Cal(true, x, y);
-                        ++useQueen;
-                        if (useQueen == N)
-                            ++count;
 
-                        NQueen(x, y+1);
-                        Cal(false, x, y);
-                        --useQueen;
-                    }
-                }
-            }
-        }
 
-        private static void Cal(bool isPush, int x, int y)
-        {
-            var num = isPush ? 1 : -1;
-            for (int i = 0; i < N; ++i)
-            {
-                chessBoard[x, i] += num;
-                chessBoard[i, y] += num;
-            }
 
-            for (int i = 0; 0 <= x - i && 0 < y - i; ++i)
-                chessBoard[x - i, y - i] += num;
 
-            for (int i = 0; x + i < N && y + i < N; ++i)
-                chessBoard[x + i, y + i] += num;
-            
-            for (int i = 0; 0 <= x - i && y + i < N; ++i)
-                chessBoard[x - i, y + i] += num;
-            
-            for (int i = 0; x + i < N && 0 < y - i; ++i)
-                chessBoard[x + i, y - i] += num;
-        }
+     
+
     }
 }
 
@@ -79,3 +32,21 @@ namespace ChallengeBaekjone
  *     }
  * }
  */
+
+
+// static int W(int a, int b, int c)
+// {
+//     if (a <= 0 || b <= 0 || c <= 0)
+//     {
+//         return 1;
+//     }
+//     if (a > 20 || b > 20 || c > 20)
+//     {
+//         return W(20, 20, 20);
+//     }
+//     if (a < b && b < c)
+//     {
+//         return W(a, b, c - 1) + W(a, b - 1, c - 1) - W(a, b - 1, c);
+//     }
+//     return W(a - 1, b, c) + W(a - 1, b - 1, c) + W(a - 1, b, c - 1) - W(a - 1, b - 1, c - 1);
+// }
