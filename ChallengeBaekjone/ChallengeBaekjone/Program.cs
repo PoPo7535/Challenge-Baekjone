@@ -5,8 +5,7 @@ namespace ChallengeBaekjone
     {
         static void Main()
         {
-
-            
+  
         }
     }
 }
