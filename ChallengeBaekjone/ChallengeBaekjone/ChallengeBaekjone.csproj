@@ -42,6 +42,7 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Baekjone1463.cs" />
         <Compile Include="Baekjone14888.cs" />
         <Compile Include="Baekjone14889.cs" />
         <Compile Include="Baekjone15652.cs" />
@@ -93,6 +94,7 @@
         <Compile Include="Baekjone2485.cs" />
         <Compile Include="Baekjone25192.cs" />
         <Compile Include="Baekjone25501.cs" />
+        <Compile Include="Baekjone2579.cs" />
         <Compile Include="Baekjone2580.cs" />
         <Compile Include="Baekjone26069.cs" />
         <Compile Include="Baekjone27433.cs" />
