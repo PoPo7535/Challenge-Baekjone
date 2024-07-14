@@ -1,7 +1,4 @@
 ﻿using System;
-using System.IO;
-using System.Linq;
-using System.Text;
 
 namespace ChallengeBaekjone
 {
@@ -15,16 +12,8 @@ namespace ChallengeBaekjone
 
 
 /*
- * var input = Console.ReadLine().Split(' ');
- * var N = int.Parse(input[0]);
- * var M = int.Parse(input[1]);
- * 
- * using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
- * {
- *     for (int i = 0; i < N; ++i)
- *     {
- *         var key = Console.ReadLine();
- *         writer.WriteLine(dic[key]);
- *     }
- * }
+ * var sr = new StreamReader(Console.OpenStandardInput());
+ * var sw = new StreamWriter(Console.OpenStandardOutput());
+ * sr.Close();
+ * sw.Close();
  */
