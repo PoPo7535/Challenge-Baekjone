@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 
 namespace ChallengeBaekjone
 {
@@ -6,6 +7,11 @@ namespace ChallengeBaekjone
     {
         static void Main()
         {
+            var sr = new StreamReader(Console.OpenStandardInput());
+            var sw = new StreamWriter(Console.OpenStandardOutput());
+
+            sr.Close();
+            sw.Close();
         }
     }
 }
