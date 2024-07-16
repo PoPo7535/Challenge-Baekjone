@@ -44,6 +44,7 @@
     <ItemGroup>
         <Compile Include="Baekjone1009.cs" />
         <Compile Include="Baekjone1032.cs" />
+        <Compile Include="Baekjone1075.cs" />
         <Compile Include="Baekjone11659.cs" />
         <Compile Include="Baekjone1463.cs" />
         <Compile Include="Baekjone14888.cs" />
