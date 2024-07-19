@@ -10,11 +10,11 @@ namespace ChallengeBaekjone
             var sr = new StreamReader(Console.OpenStandardInput());
             var sw = new StreamWriter(Console.OpenStandardOutput());
 
-            var N = sr.ReadLine();
-            var F = int.Parse(sr.ReadLine());
-            var val = int.Parse(N.Substring(0, N.Length - 2)) * 100;
-            var n = val % F;
-            sw.WriteLine((F - n).ToString().PadLeft(2,'0'));
+            var arr = Array.ConvertAll(sr.ReadLine().Split(), int.Parse);
+            var x = arr[0] < arr[2] - arr[0] ? arr[0] : arr[2] - arr[0];  
+            var y = arr[1] < arr[3] - arr[1] ? arr[1] : arr[3] - arr[1];
+            sw.WriteLine(x < y ? x : y);
+            
             sr.Close();
             sw.Close();
         }
