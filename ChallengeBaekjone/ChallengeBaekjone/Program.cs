@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Text;
 
 namespace ChallengeBaekjone
 {
@@ -10,16 +11,24 @@ namespace ChallengeBaekjone
             var sr = new StreamReader(Console.OpenStandardInput());
             var sw = new StreamWriter(Console.OpenStandardOutput());
 
-            var str = new[] { "SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT" };
-            var days = new[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-            var input = Console.ReadLine().Split();
-            var x = int.Parse(input[0]);
-            var day = int.Parse(input[1]);
-            for (int i = 0; i < x - 1; ++i)
-                day += days[i];
-            Console.WriteLine(str[day % 7]);
-
-
+            var str= Console.ReadLine().Split();
+            var N = int.Parse(str[0]);
+            var M = int.Parse(str[1]);
+            var max = int.MinValue;
+            StringBuilder sb ;
+            for (int i = 1; i <= M; ++i)
+            {
+                var val = 0;
+                sb = new StringBuilder((N * i).ToString());
+                for (int j = 0; j < sb.Length; ++j)
+                    val += (int)Math.Pow(10, sb.Length - j) * (sb[sb.Length -j- 1] - '0');
+                val /= 10;
+                if (max < val)
+                    max = val;
+            }
+            Console.WriteLine(max);
+            
+            
             // var N = int.Parse(sr.ReadLine());
             // var arr = new int[N, N];
             // var size = N;
