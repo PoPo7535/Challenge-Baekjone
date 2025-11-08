@@ -12,9 +12,6 @@ namespace ChallengeBaekjone
                 var str = Console.ReadLine();
                 if (str == ".")
                     return;
-                var aCount = 0;
-                var bCount = 0;
-                var cur = 0; // 1:a,  2,b
                 var stack = new Stack<int>();
                 foreach (var t in str)
                 {

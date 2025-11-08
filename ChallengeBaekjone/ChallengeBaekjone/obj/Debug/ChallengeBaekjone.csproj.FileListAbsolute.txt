@@ -1,0 +1,9 @@
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\bin\Debug\ChallengeBaekjone.exe
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\bin\Debug\ChallengeBaekjone.pdb
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\bin\Debug\System.Numerics.dll
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\bin\Debug\ko\System.Numerics.resources.dll
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\obj\Debug\ChallengeBaekjone.csproj.AssemblyReference.cache
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\obj\Debug\ChallengeBaekjone.csproj.CoreCompileInputs.cache
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\obj\Debug\Challeng.A31AB5D2.Up2Date
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\obj\Debug\ChallengeBaekjone.exe
+C:\Users\dltng\Desktop\Challenge-Baekjone\ChallengeBaekjone\ChallengeBaekjone\obj\Debug\ChallengeBaekjone.pdb
