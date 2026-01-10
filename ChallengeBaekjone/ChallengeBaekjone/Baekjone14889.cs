@@ -7,8 +7,6 @@ namespace ChallengeBaekjone
     {
         static int[,] table;
         static int N;
-        static int startScore = 0;
-        static int linkScore = 0;
         private static int minVal = int.MaxValue;
         static void Problem()
         {

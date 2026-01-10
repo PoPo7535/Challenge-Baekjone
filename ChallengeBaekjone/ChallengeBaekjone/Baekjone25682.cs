@@ -11,6 +11,9 @@ namespace ChallengeBaekjone
             var sr = new StreamReader(Console.OpenStandardInput());
             var sw = new StreamWriter(Console.OpenStandardOutput());
 
+            sr.ReadLine();
+            sw.WriteLine();
+            
             sr.Close();
             sw.Close();
         }
