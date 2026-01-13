@@ -12,6 +12,7 @@
         <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>8</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -53,6 +54,7 @@
         <Compile Include="Baekjone1149.cs" />
         <Compile Include="Baekjone11659.cs" />
         <Compile Include="Baekjone11660.cs" />
+        <Compile Include="Baekjone13018.cs" />
         <Compile Include="Baekjone13305.cs" />
         <Compile Include="Baekjone13410.cs" />
         <Compile Include="Baekjone1463.cs" />
@@ -131,6 +133,7 @@
         <Compile Include="Baekjone4246.cs" />
         <Compile Include="Baekjone4779.cs" />
         <Compile Include="Baekjone4949.cs" />
+        <Compile Include="BaekJone5913.cs" />
         <Compile Include="Baekjone7785.cs" />
         <Compile Include="Baekjone9184.cs" />
         <Compile Include="Baekjone9461.cs" />
