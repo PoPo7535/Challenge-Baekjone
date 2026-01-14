@@ -10,24 +10,24 @@ namespace ChallengeBaekjone.Properties
     {
         public static void Problem()
         {
-            var input = Console.ReadLine().Split(' ');
-            var N = int.Parse(input[0]);
-            var M = int.Parse(input[1]);
-            var hashSet1 = new HashSet<string>();
-            var hashSet2 = new HashSet<string>();
-            for (int i = 0; i < N; ++i)
-                hashSet1.Add(Console.ReadLine());
-            for (int i = 0; i < M; ++i)
-                hashSet2.Add(Console.ReadLine());
-            using (var writer = new StreamWriter(Console.OpenStandardOutput(), Encoding.Default, bufferSize: 1024))
+            var sr = new StreamReader(Console.OpenStandardInput());
+            var sw = new StreamWriter(Console.OpenStandardOutput());
+            var hash = new HashSet<string>();
+            var list = new List<string>();
+            var input = sr.ReadLine().Split(' ').Select(int.Parse).ToArray();
+            for (int i = 0; i < input[0]; i++)
             {
-                var list = hashSet1.Where(str => hashSet2.Contains(str)).ToList();
+                var str = sr.ReadLine();
+                hash.Add(str);
+            }   
+            for (int i = 0; i < input[1]; i++)
+            {
     
-                list.Sort();
-                writer.WriteLine(list.Count);
-                foreach (var str in list)
-                    writer.WriteLine(str);
-            }
+                var str = sr.ReadLine();
+                if(hash.Contains(str))
+                   list.Add(str); 
+            } 
+            list.Sort();
         }
     }
 }
