@@ -140,6 +140,7 @@
         <Compile Include="Baekjone9184.cs" />
         <Compile Include="Baekjone9461.cs" />
         <Compile Include="Baekjone9663.cs" />
+        <Compile Include="Baekjoon16395.cs" />
         <Compile Include="Baekjoon32334.cs" />
         <Compile Include="Program.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
